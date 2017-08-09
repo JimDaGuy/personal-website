@@ -1,0 +1,284 @@
+/* Default Settings/Extrasmall Devices*/
+
+nav {
+    text-transform: uppercase;
+}
+
+#nav-links li {
+    text-align: center;
+    }
+    
+.intro-section {
+    height: 25%;
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 60%;
+    padding-top: 25px;
+    text-align: center;
+    background: #eee;
+}
+
+.skills-section {
+    height: 80%;
+    padding-top: 150px;
+    text-align: center;
+    background: #54504F;
+}
+
+.projects-section {
+    height: 270vw;
+    padding-top: 10px;
+    text-align: center;
+    background: #eee;
+}
+
+.xs-project-panel {
+    width: 100%;
+}
+
+.sm-proj {
+    display: none;
+}
+
+.md-lg-proj {
+        display: none;
+    }
+    
+.contact-section {
+    height: 275px;
+    text-align: center;
+    background: #54504F;
+}
+
+#contact-blurb {
+    padding-top: 10px;
+}
+
+.footer-section {
+    padding-top: 5px;
+    height: 100px;
+    text-align: center;
+    background: #212020;
+}
+
+
+/* Slick Slider */
+
+.socialMedia {
+  color: gray;
+  width:  40%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  font-family: Inconsolata;
+  height: 10px;
+  position: relative;
+  z-index: 999999;
+}
+
+.socialMedia i{
+  font-size: 1.5em;
+  height: 40%;
+  display: block;
+  margin: auto;
+  width: 40%;
+  color: gray;
+}
+
+.slick-prev {
+  padding-top: 5px;
+  left: -25px;
+  z-index: 99;
+}
+
+.slick-next {
+  padding-top: 5px;
+  right: -25px;
+  z-index: 99;
+}
+
+
+/* Media Queries*/
+
+/* Small Devices*/
+@media only screen and (min-width: 768px)  and (max-width: 991px) {
+    #nav-links li {
+        left: 30vw;
+    }
+    
+    .intro-section {
+        height: 40%;
+        padding-top: 100px;
+    }
+    
+    .about-section {
+        height: 60%;
+        padding-top: 50px;
+        text-align: center;
+        background: #eee;
+    }
+
+    .skills-section {
+        height: 80%;
+        padding-top: 150px;
+        text-align: center;
+        background: #54504F;
+    }
+    
+    .projects-section {
+        height: 65%;
+    }
+    
+    .xs-proj {
+        display: none;
+    }
+    
+    .sm-proj {
+        display: initial;
+    }
+    
+    .md-lg-proj {
+        display: none;
+    }
+    
+    .sm-project-panel {
+        width:100%;
+    }
+    
+    .contact-section {
+        height: 250px;
+    }
+    
+    .footer-section {
+        height: 10%;
+    }
+    
+    
+}
+
+/* Medium Devices*/
+@media only screen and (min-width: 992px)  and (max-width: 1199px) {
+    
+    #nav-links li {
+        left: 30vw;
+    }
+    
+    .intro-section {
+        height: 40%;
+        padding-top: 150px;
+    }
+    
+    .about-section {
+        height: 60%;
+        padding-top: 25px;
+        text-align: center;
+        background: #eee;
+    }
+
+    .skills-section {
+        height: 80%;
+        padding-top: 25px;
+        text-align: center;
+        background: #54504F;
+    }
+    
+    .projects-section {
+        padding-top: 25px;
+        height: 600px;
+    }
+    
+    .md-lg-project-panel {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .xs-proj {
+        display: none;
+    }
+    
+    .sm-proj {
+        display: none;
+    }
+    
+    .md-lg-proj {
+        display: initial;
+    }
+    
+    #large-panel {
+        height: 220px;
+        float: left;
+    }
+    
+    .contact-section {
+        height: 250px;
+    }
+    
+    .footer-section {
+        height: 7.5%;
+    }
+}
+
+/* Large Devices */
+@media only screen and (min-width: 1200px) {
+    
+    #nav-links li {
+        left: 30vw;
+    }
+    
+    .intro-section {
+        height: 40%;
+        padding-top: 150px;
+    }
+    
+    .about-section {
+        height: 60%;
+        padding-top: 25px;
+        text-align: center;
+        background: #eee;
+    }
+
+    .skills-section {
+        height: 80%;
+        padding-top: 25px;
+        text-align: center;
+        background: #54504F;
+    }
+    
+    .projects-section {
+        padding-top: 25px;
+        height: 600px;
+    }
+    
+    .xs-proj {
+        display: none;
+    }
+    
+    .sm-proj {
+        display: none;
+    }
+    
+    .md-lg-proj {
+        display: initial;
+    }
+    
+    .md-lg-project-panel {
+        height: 100px;
+        width: 100%;
+    }
+    
+    #large-panel {
+        height: 220px;
+        float: left;
+    }
+    
+    .contact-section {
+        height: 250px;
+    }
+    
+    .footer-section {
+        height: 5vw;
+    }
+}
