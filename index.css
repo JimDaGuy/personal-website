@@ -1,63 +1,201 @@
 /* Default Settings/Extrasmall Devices*/
 
+/*Set all text in the navigation bar to uppercase lettering*/
 nav {
     text-transform: uppercase;
 }
 
+/*Center the links located in he nav bar*/
 #nav-links li {
     text-align: center;
     }
     
+/*
+Give the intro section a height of 25% of the screen
+Give it 50px of padding on the top
+Center any text in the intro section
+Set the intro section's background to white
+*/    
 .intro-section {
     height: 25%;
     padding-top: 50px;
+    padding-bottom: 100px;
     text-align: center;
     background: #fff;
 }
 
+/* 
+Give a top padding of 25px
+Center-align text
+Set background to light gray
+*/
 .about-section {
-    height: 60%;
     padding-top: 25px;
     text-align: center;
     background: #eee;
 }
 
+/* 
+Set picture width to 80% of the screen width
+Center picture
+Give a 5px black border
+*/
+#profile-picture {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+}
+
+/*
+Set width to 80% of the screen
+Center description
+Font size of 1em
+Sans-serif font
+10px padding above and below the text
+*/
+#personal-description {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+    font-family: sans-serif;
+    padding: 10px 0;
+}
+
+/* 
+Top and bottom padding of 25px
+Center text in skills section
+Make the background dark gray
+*/
 .skills-section {
-    height: 80%;
-    padding-top: 150px;
+    padding: 25px 0;
     text-align: center;
     background: #54504F;
 }
 
-.projects-section {
-    height: 270vw;
-    padding-top: 10px;
-    text-align: center;
+#skills {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+/*
+ADD HOVER EFFECTS TO DISPLAY SKILL NAME
+*/
+.skill-box {
+    width: 80%;
+    border: 3px solid black;
+    margin: 10px auto;
     background: #eee;
 }
 
-.xs-project-panel {
+.skill-header {
     width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
 }
 
-.sm-proj {
-    display: none;
+.language {
+    width: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    border: 1px solid gray;
+    float: left;
 }
 
-.md-lg-proj {
-        display: none;
-    }
-    
+.tool {
+    width: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    border: 1px solid gray;
+    float: left;
+}
+
+/* 
+Add 10px of padding to the top of the projects section
+Center all text
+Set the background to light gray
+*/
+.projects-section {
+    padding-top: 25px;
+    text-align: center;
+    background: orange;
+}
+
+/*
+Set height to 275px
+Center text
+Set background to dark gray
+*/
 .contact-section {
     height: 275px;
     text-align: center;
     background: #54504F;
 }
 
+/* 
+Add 10px of padding to the top of the contact blurb
+*/
 #contact-blurb {
     padding-top: 10px;
 }
 
+/* Social Media Slider using Slick Library */
+
+/*
+Gray icons
+Width to 40% of screen
+30px top-margin, centered
+Center icons
+Height of 10px
+High z-index to send it in front of all elements
+*/
+.socialMedia {
+  color: gray;
+  width:  40%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  height: 10px;
+  z-index: 999999;
+}
+
+/*
+Set font size of icons to 1.5em
+Block display
+Icons centered
+Width of icons to 40$ of their blocks
+Gray icons
+*/
+.socialMedia i {
+  font-size: 1.5em;
+  display: block;
+  margin: auto;
+  width: 40%;
+  color: gray;
+}
+
+/*Position left arrow outside of slider and in front of most elements*/
+.slick-prev {
+  padding-top: 5px;
+  left: -25px;
+  z-index: 99;
+}
+
+/*Position right arrow outside of slider and in front of most elements*/
+.slick-next {
+  padding-top: 5px;
+  right: -25px;
+  z-index: 99;
+}
+
+/* 
+Add 5px of padding to the top of padding
+Set height to 100px
+Center text
+Set background to very dark gray
+*/
 .footer-section {
     padding-top: 5px;
     height: 100px;
@@ -65,46 +203,11 @@ nav {
     background: #212020;
 }
 
-
-/* Slick Slider */
-
-.socialMedia {
-  color: gray;
-  width:  40%;
-  margin: 30px auto 0 auto;
-  text-align: center;
-  font-family: Inconsolata;
-  height: 10px;
-  position: relative;
-  z-index: 999999;
-}
-
-.socialMedia i{
-  font-size: 1.5em;
-  height: 40%;
-  display: block;
-  margin: auto;
-  width: 40%;
-  color: gray;
-}
-
-.slick-prev {
-  padding-top: 5px;
-  left: -25px;
-  z-index: 99;
-}
-
-.slick-next {
-  padding-top: 5px;
-  right: -25px;
-  z-index: 99;
-}
-
-
 /* Media Queries*/
 
 /* Small Devices*/
 @media only screen and (min-width: 768px)  and (max-width: 991px) {
+    /*
     #nav-links li {
         left: 30vw;
     }
@@ -115,9 +218,7 @@ nav {
     }
     
     .about-section {
-        height: 60%;
         padding-top: 50px;
-        text-align: center;
         background: #eee;
     }
 
@@ -126,90 +227,6 @@ nav {
         padding-top: 150px;
         text-align: center;
         background: #54504F;
-    }
-    
-    .projects-section {
-        height: 65%;
-    }
-    
-    .xs-proj {
-        display: none;
-    }
-    
-    .sm-proj {
-        display: initial;
-    }
-    
-    .md-lg-proj {
-        display: none;
-    }
-    
-    .sm-project-panel {
-        width:100%;
-    }
-    
-    .contact-section {
-        height: 250px;
-    }
-    
-    .footer-section {
-        height: 10%;
-    }
-    
-    
-}
-
-/* Medium Devices*/
-@media only screen and (min-width: 992px)  and (max-width: 1199px) {
-    
-    #nav-links li {
-        left: 30vw;
-    }
-    
-    .intro-section {
-        height: 40%;
-        padding-top: 150px;
-    }
-    
-    .about-section {
-        height: 60%;
-        padding-top: 25px;
-        text-align: center;
-        background: #eee;
-    }
-
-    .skills-section {
-        height: 80%;
-        padding-top: 25px;
-        text-align: center;
-        background: #54504F;
-    }
-    
-    .projects-section {
-        padding-top: 25px;
-        height: 600px;
-    }
-    
-    .md-lg-project-panel {
-        height: 100px;
-        width: 100%;
-    }
-    
-    .xs-proj {
-        display: none;
-    }
-    
-    .sm-proj {
-        display: none;
-    }
-    
-    .md-lg-proj {
-        display: initial;
-    }
-    
-    #large-panel {
-        height: 220px;
-        float: left;
     }
     
     .contact-section {
@@ -219,11 +236,13 @@ nav {
     .footer-section {
         height: 7.5%;
     }
+    */
+    
 }
 
-/* Large Devices */
+/*Medium and Large Devices */
 @media only screen and (min-width: 1200px) {
-    
+    /*
     #nav-links li {
         left: 30vw;
     }
@@ -234,10 +253,7 @@ nav {
     }
     
     .about-section {
-        height: 60%;
-        padding-top: 25px;
-        text-align: center;
-        background: #eee;
+        
     }
 
     .skills-section {
@@ -252,28 +268,6 @@ nav {
         height: 600px;
     }
     
-    .xs-proj {
-        display: none;
-    }
-    
-    .sm-proj {
-        display: none;
-    }
-    
-    .md-lg-proj {
-        display: initial;
-    }
-    
-    .md-lg-project-panel {
-        height: 100px;
-        width: 100%;
-    }
-    
-    #large-panel {
-        height: 220px;
-        float: left;
-    }
-    
     .contact-section {
         height: 250px;
     }
@@ -281,4 +275,5 @@ nav {
     .footer-section {
         height: 5vw;
     }
+    */
 }

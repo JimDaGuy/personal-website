@@ -21,6 +21,10 @@
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <!--Font Awesome for Logos and Icons-->
         <script src="https://use.fontawesome.com/85f6cd6809.js"></script>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet">
+
     
         <link rel="stylesheet" type="text/css" href="index.css">
         
@@ -91,7 +95,15 @@
                 <div class="col-lg-12">
                     <h1>About Me</h1>
                 </div>
-                
+                <div class="col-lg-12">
+                    <img src="profilepicture.jpg" alt="James DiGrazia's Profile Picture" id="profile-picture"/>
+                    <div id="personal-description">
+                        This is my personal description. I will list my interests,
+                        my employment status, and my current projects here. I will
+                        also describe my web development interests, my major, and 
+                        any accomplishments that are note-worthy.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -101,7 +113,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Skills Section</h1>
+                    <h1>Skills</h1>
+                </div>
+                <div class="col-lg-12">
+                    <div id="skills">
+                        <div id="languages" class="skill-box">
+                            <div class="skill-header">Languages</div>
+                            <img src="csharp.png" alt="C-Sharp" class="language"/>
+                            <img src="csharp.png" alt="C-Sharp" class="language"/>
+                            <img src="csharp.png" alt="C-Sharp" class="language"/>
+                            <img src="csharp.png" alt="C-Sharp" class="language"/>
+                        </div>
+                        <div id="tools" class="skill-box">
+                            <div class="skill-header">Tools</div>
+                            <img src="csharp.png" alt="C-Sharp" class="tool"/>
+                            <img src="csharp.png" alt="C-Sharp" class="tool"/>
+                            <img src="csharp.png" alt="C-Sharp" class="tool"/>
+                            <img src="csharp.png" alt="C-Sharp" class="tool"/>
+                            <img src="csharp.png" alt="C-Sharp" class="tool"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,71 +147,6 @@
                 </div>
             </div>
             
-            <!--Projects Display for Extra Small Screens-->
-            <div class="row xs-proj">
-                <div class="col-xs-12">
-                    <img class="panel xs-project-panel" src="https://placehold.it/400x250/688F48?text=1"></img>
-                </div>
-                <div class="col-xs-12">
-                    <img class="panel xs-project-panel" src="https://placehold.it/400x250/688F48?text=2"></img>
-                </div>
-                <div class="col-xs-12">
-                    <img class="panel xs-project-panel" src="https://placehold.it/400x250/688F48?text=3"></img>
-                </div>
-                <div class="col-xs-12">
-                    <img class="panel xs-project-panel" src="https://placehold.it/400x250/688F48?text=4"></img>
-                </div>
-            </div>
-            
-            <!--Projects Display for Small Screens-->
-            <div class="row sm-proj">
-                <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">
-                        <img class="panel sm-project-panel" src="https://placehold.it/400x250/688F48?text=1"></img>
-                    </div>
-                    <div class="col-sm-5">
-                        <img class="panel sm-project-panel" src="https://placehold.it/400x250/688F48?text=2"></img>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">
-                        <img class="panel sm-project-panel" src="https://placehold.it/400x250/688F48?text=3"></img>
-                    </div>
-                    <div class="col-sm-5">
-                        <img class="panel sm-project-panel" src="https://placehold.it/400x250/688F48?text=4"></img>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Projects Display for Medium and Large Screens -->
-            <div class="row md-lg-proj">
-                <!-- Left Spacing Column-->
-                <div class="col-md-2"></div>
-                <!--Small panels for project thumbnails-->
-                <div class="col-md-2">
-                    <div class="">
-                        <img class="panel md-lg-project-panel" src="https://placehold.it/400x250/688F48?text=1"></img>
-                    </div>
-                    <div class="">
-                        <img class="panel md-lg-project-panel" src="https://placehold.it/400x250/688F48?text=2"></img>
-                    </div>
-                    <div class="">
-                        <img class="panel md-lg-project-panel" src="https://placehold.it/400x250/688F48?text=3"></img>
-                    </div>
-                    <div class="">
-                        <img class="panel md-lg-project-panel" src="https://placehold.it/400x250/688F48?text=4"></img>
-                    </div>
-                </div>
-                <!--Enlarged Picture of Active Project-->
-                <div class="col-md-6">
-                    <img class="panel" id="large-panel" src="https://placehold.it/400x250/688F48?text=1"></img>
-                </div>
-                <!--Description of Active Project-->
-                <div class="col-md-2">
-                </div>
-            </div>
             
         </div>
     </section>
@@ -193,7 +159,7 @@
                     <h2>Contact Me</h2>
                     <h4 id="contact-blurb">Want to talk to me about my work? Feel free to send me an email!</h4>
                     <h4>You can find more about me at the links below</h4>
-                    <button type="button" class="btn btn-primary btn-lg">Email Me</button>
+                    <button type="button" class="btn btn-link btn-lg">Email Me</button>
                     <!-- Social Media SLider -->
                         <div class="socialMedia">
                         <!--Slider Elements-->
