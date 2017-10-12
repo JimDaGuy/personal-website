@@ -72,6 +72,10 @@ Make the background dark gray
     background: #54504F;
 }
 
+/*
+Add flex display for skill boxes within the #skills container
+Use flex column for skill boxes
+*/
 #skills {
     display: -webkit-flex;
     display: flex;
@@ -80,36 +84,42 @@ Make the background dark gray
 }
 /*
 ADD HOVER EFFECTS TO DISPLAY SKILL NAME
+Set width of skill boxes to 80% of screen size
+3px border around skill boxes
+Margin of 10px above and below each box and centers them
+Set background color to light blue
 */
 .skill-box {
     width: 80%;
     border: 3px solid black;
     margin: 10px auto;
-    background: #eee;
+    background: #BFD7D3;
 }
 
+/* 
+Set width of header to 100% of the skills box container
+Center header
+Font-size of 1.5em
+Sans-serif font
+*/
 .skill-header {
     width: 100%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: sans-serif;
 }
 
-.language {
+/* 
+Set width of each language to 35% of the skill box
+10px margin above and below each language
+Set left margin to 10% of skill box
+Float skills to the left
+*/
+.skill {
     width: 35%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
-    border: 1px solid gray;
-    float: left;
-}
-
-.tool {
-    width: 35%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-    border: 1px solid gray;
     float: left;
 }
 
@@ -121,7 +131,7 @@ Set the background to light gray
 .projects-section {
     padding-top: 25px;
     text-align: center;
-    background: orange;
+    background: #FFFDEC;
 }
 
 /*
@@ -130,7 +140,6 @@ Center text
 Set background to dark gray
 */
 .contact-section {
-    height: 275px;
     text-align: center;
     background: #54504F;
 }
@@ -146,16 +155,16 @@ Add 10px of padding to the top of the contact blurb
 
 /*
 Gray icons
-Width to 40% of screen
-30px top-margin, centered
+Width to 80% of screen
+20px top/bottom margin, centered
 Center icons
 Height of 10px
 High z-index to send it in front of all elements
 */
 .socialMedia {
   color: gray;
-  width:  40%;
-  margin: 30px auto 0 auto;
+  width:  80%;
+  margin: 20px auto;
   text-align: center;
   height: 10px;
   z-index: 999999;
@@ -165,7 +174,7 @@ High z-index to send it in front of all elements
 Set font size of icons to 1.5em
 Block display
 Icons centered
-Width of icons to 40$ of their blocks
+Width of icons to 40% of their blocks
 Gray icons
 */
 .socialMedia i {
@@ -191,16 +200,28 @@ Gray icons
 }
 
 /* 
-Add 5px of padding to the top of padding
-Set height to 100px
+10px of bottom padding
 Center text
 Set background to very dark gray
+White text
 */
 .footer-section {
-    padding-top: 5px;
-    height: 100px;
+    padding-bottom: 10px;
     text-align: center;
     background: #212020;
+    color: white;
+}
+
+#tst1 {
+    background: #eee;
+    color: gray;
+    text-decoration: none;
+}
+
+#tst1:hover {
+    background: gray;
+    color: white;
+    text-decoration: none;
 }
 
 /* Media Queries*/
