@@ -136,7 +136,6 @@ Set the background to light gray
 
 .proj-header {
     text-align: left;
-    font-weight: bold;
     margin-left: 5%;
 }
 
@@ -161,13 +160,21 @@ Set the background to light gray
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .5);
     text-align: left;
     padding: 20px;
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: Arial;
     color: white;
     display: none;
+}
+
+.proj-img-desc:hover .project-overlay {
+    display: block;
+}
+
+.project-overlay:hover .project-overlay {
+    display: block;
 }
 
 .skills-used {
@@ -298,77 +305,92 @@ White text
     color: white;
 }
 
-/* Media Queries*/
-
-/* Small Devices*/
-@media only screen and (min-width: 768px)  and (max-width: 991px) {
-    /*
-    #nav-links li {
-        left: 30vw;
-    }
-    
-    .intro-section {
-        height: 40%;
-        padding-top: 100px;
-    }
-    
-    .about-section {
-        padding-top: 50px;
-        background: #eee;
-    }
-
-    .skills-section {
-        height: 80%;
-        padding-top: 150px;
-        text-align: center;
-        background: #54504F;
-    }
-    
-    .contact-section {
-        height: 250px;
-    }
-    
-    .footer-section {
-        height: 7.5%;
-    }
-    */
-    
-}
-
-/*Medium and Large Devices */
-@media only screen and (min-width: 1200px) {
-    /*
-    #nav-links li {
-        left: 30vw;
-    }
-    
-    .intro-section {
-        height: 40%;
-        padding-top: 150px;
-    }
-    
-    .about-section {
-        
-    }
-
-    .skills-section {
-        height: 80%;
-        padding-top: 25px;
-        text-align: center;
-        background: #54504F;
-    }
-    
-    .projects-section {
-        padding-top: 25px;
-        height: 600px;
-    }
-    
-    .contact-section {
-        height: 250px;
-    }
-    
-    .footer-section {
-        height: 5vw;
-    }
-    */
+/*Media query for screens over 768px wide*/
+@media only screen and (min-width: 768px) {
+     #nav-links {
+         float: right;
+     }
+     
+     .intro-section {
+         padding-top: 90px;
+     }
+     
+     .about-section {
+         padding-top: 50px;
+     }
+     
+     .about-section h1 {
+         float: left;
+         margin: 0;
+     }
+     
+     #profile-picture {
+         width: 20%;
+         float: right;
+         margin: 5px 0;
+         border-color: gray;
+         border-width: 3px;
+     }
+     
+     #personal-description {
+         clear: left;
+         float: left;
+         text-align: left;
+         padding-left: 5px;
+         padding-right: 5px;
+         font-size: 1.5em;
+     }
+     
+     .skills-section {
+         padding-top: 30px;
+     }
+     
+     .skills-section h1 {
+         text-align: left;
+         width: 100%;
+     }
+     
+     #skills {
+         display: block;
+     }
+     
+     .skill-box {
+         float: left;
+         width: 42.5%;
+         margin: 0 0 0 5%;
+     }
+     
+     .skill-header {
+         text-align: left;
+         font-weight: bold;
+         padding-left: 5px;
+     }
+     
+     .skill {
+         width: 30%;
+         margin-left: 2.5%;
+     }
+     
+     .projects-section {
+         padding-top: 35px;
+     }
+     
+     .projects-section h1 {
+         text-align: left;
+     }
+     
+     .proj-container {
+         width: 42.5%;
+         margin-left: 5%;
+         float: left;
+     }
+     
+     .project-overlay {
+         font-size: 1em;
+         padding: 5px;
+     }
+     
+     .utilize-skill {
+         margin: 0 2.5px 5px 2.5px;
+     }
 }
