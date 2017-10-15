@@ -77,10 +77,8 @@ Make the background dark gray
 Add flex display for skill boxes within the #skills container
 Use flex column for skill boxes
 */
-#skills {
-    display: -webkit-flex;
+#skills2 {
     display: flex;
-    -webkit-flex-direction: column;
     flex-direction: column
 }
 /*
@@ -472,7 +470,7 @@ White text
      /*
     Remove flexbox from skills
     */
-     #skills {
+     #skills2 {
          display: block;
      }
      
