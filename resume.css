@@ -1,0 +1,180 @@
+/*
+Set height of container to full screen height
+Set width to 80% of screen width
+Limit width to 600px maximum
+Center container
+*/
+#container {
+    height: 100%;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*
+Width of Name-Objective Box is 70% of container
+Float to the left
+10px margin to the right
+*/
+#name-obj {
+    width: 70%;
+    float: left;
+    margin-right: 10px;
+}
+
+/*
+Set contact box to 15% of the container
+Float to the left
+*/
+#contact-box {
+    width: 15%;
+    padding: 20px 0;
+    float: left;
+}
+
+/*
+Change links to black and remove underline
+*/
+.contact-link {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+Font-size of 31px
+Merriwether font
+No margin below h1
+*/
+h1 {
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0;
+}
+
+/*
+Font size to 9px
+Open Sans font
+Light blue colored text
+No padding or margin
+*/
+h2 {
+    font-size: 9px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(32, 121, 199);
+    padding: 0;
+    margin: 0;
+}
+
+/*
+Font size to 11px
+No padding
+10px top and bottom margin
+Merriweather font
+Un-bolded
+Italic
+*/
+h3 {
+    font-size: 11px;
+    padding: 0;
+    margin: 10px 0;
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*
+Remove bottom margin from first education header
+*/
+#education-h3-1 {
+    margin-bottom: 0;
+}
+
+/*
+Remove top margin from second education header
+*/
+#education-h3-2 {
+    margin-top: 0;
+}
+
+/*
+Remove italics and add bolding
+*/
+.bold-h3 {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*
+Font size to 10px
+Bree Serif font
+Remove bolding
+Margin to 0
+*/
+.contact-header {
+    font-size: 10px;
+    font-family: 'Bree Serif', serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+/*
+Font size to 8px
+Open Sans font
+Gray text
+No margin
+*/
+.date-header {
+    font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666666;
+    margin: 0;
+}
+
+/*
+Font size to 9px
+Open Sans font
+No margin
+Bottom padding of 25px
+*/
+h5 {
+    font-size: 9px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+/*
+Font size of 9px
+Gray text
+*/
+p {
+    font-size: 9px;
+    color: #666666;
+}
+
+/*
+Width of 100% of container
+Put all sections on their own row
+*/
+.main-section {
+    width: 100%;
+    clear: both;
+}
+
+/*
+Boxes are 30% as wide as their container
+Float to the left
+10px on the right margin
+*/
+.skill-box {
+    width: 30%;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+/*
+Remove bottom margin from "Utilizes:" paragraphs
+*/
+.util-p {
+    margin-bottom: 0;
+}

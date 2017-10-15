@@ -5,7 +5,7 @@ nav {
     text-transform: uppercase;
 }
 
-/*Center the links located in he nav bar*/
+/*Center the links located in the nav bar*/
 #nav-links li {
     text-align: center;
     }
@@ -13,6 +13,7 @@ nav {
 /*
 Give the intro section a height of 25% of the screen
 Give it 50px of padding on the top
+100px bottom padding
 Center any text in the intro section
 Set the intro section's background to white
 */    
@@ -83,7 +84,6 @@ Use flex column for skill boxes
     flex-direction: column
 }
 /*
-ADD HOVER EFFECTS TO DISPLAY SKILL NAME
 Set width of skill boxes to 80% of screen size
 3px border around skill boxes
 Margin of 10px above and below each box and centers them
@@ -124,7 +124,7 @@ Float skills to the left
 }
 
 /* 
-Add 10px of padding to the top of the projects section
+Add 25px of padding to the top of the projects section
 Center all text
 Set the background to light gray
 */
@@ -134,11 +134,21 @@ Set the background to light gray
     background: #FFFDEC;
 }
 
+/*
+Align text to left
+Set margin to 5% of project container for each project header
+*/
 .proj-header {
     text-align: left;
     margin-left: 5%;
 }
 
+/*
+Set project img-desc box to 90% width
+Center the img-desc box and add 10px margins above and below
+Position relative
+Put the img-desc box on its' own line
+*/
 .proj-img-desc {
     width: 90%;
     margin: 10px auto;
@@ -146,12 +156,29 @@ Set the background to light gray
     clear: left;
 }
 
+/*
+Width set to 100% of the img-desc box
+Block display for project image
+*/
 .proj-img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
+/*
+Set position to absolute
+Set overlay position to properly cover the image
+Set width and height to 100% of the container
+Set overlay to black with .5 opacity
+Align text to the left
+Padding of 20px for the text
+Font size of 1.3em
+Arial font
+White text
+Default the overlay to have no appearance
+Allow scrolling
+Hide the horizontal scrollbar
+*/
 .project-overlay {
     position: absolute;
     top: 0;
@@ -171,20 +198,41 @@ Set the background to light gray
     overflow-y: scroll;
 }
 
+/*
+Display overlay when hovering the project
+*/
 .proj-img-desc:hover .project-overlay {
     display: block;
 }
 
+/*
+Display overlay when hovering the overlay
+*/
 .project-overlay:hover .project-overlay {
     display: block;
 }
 
+/*
+Width set to 90% of the project container
+60px height
+10px top and bottom margins
+Centered
+*/
 .skills-used {
     width: 90%;
     height: 60px;
     margin: 10px auto;
 }
 
+/*
+5px left and right padding
+5px right, bottom, and left margins
+Float to the left
+Light blue background
+1px black border
+Rounded by 7.5px
+Atleast 25px tall
+*/
 .utilize-skill {
     padding: 0 5px;
     margin: 0 5px 5px 5px;
@@ -195,12 +243,14 @@ Set the background to light gray
     min-height: 25px;
 }
 
+/*
+Dark blue background
+*/
 .utilize-header {
     background: #3B54FF;
 }
 
 /*
-Set height to 275px
 Center text
 Set background to dark gray
 */
@@ -209,40 +259,64 @@ Set background to dark gray
     background: #D6D6C9;
 }
 
+/*
+5px top and bottom margin
+Centered
+No border
+*/
 .contact-section h2 {
     margin: 5px auto;
     border: 0;
 }
 
+/*
+Font size of 20px
+5px top and bottom margin
+Centered
+No border
+*/
 .contact-section h3 {
     font-size: 20px;
     border: 0;
     margin: 5px auto;
 }
 
+/*
+15% of screen margin on the right
+White background
+Gray text
+*/
 #emailButton {
     margin-right: 15%;
     background: #eee;
     color: gray;
-    text-decoration: none;
 }
 
+/* - Hover effects
+Gray background
+White text
+*/
 #emailButton:hover {
     background: gray;
     color: white;
-    text-decoration: none;
 }
 
+/*
+White background
+Gray text
+*/
 #resumeButton {
     background: #eee;
     color: gray;
-    text-decoration: none;
 }
 
+/* - Hover effects
+Gray background
+White text
+*/
 #resumeButton:hover {
     background: gray;
     color: white;
-    text-decoration: none;
 }
 
 
@@ -250,7 +324,7 @@ Set background to dark gray
 
 /*
 Gray icons
-Width to 80% of screen
+Width to 60% of screen
 20px top/bottom margin, centered
 Center icons
 Height of 10px
@@ -280,6 +354,9 @@ Gray icons
   color: gray;
 }
 
+/*
+Icons white when hovered
+*/
 .socialMedia i:hover {
     color: white;
 }
@@ -313,23 +390,43 @@ White text
 
 /*Media query for screens over 768px wide*/
 @media only screen and (min-width: 768px) {
+    
+    /*
+    Float links to the right
+    */
      #nav-links {
          float: right;
      }
      
+     /*
+    Top padding of 90px
+    */
      .intro-section {
          padding-top: 90px;
      }
      
+     /*
+    top padding of 50px
+    */
      .about-section {
          padding-top: 50px;
      }
      
+     /*
+    Float h1 to the left
+    Remove margin
+    */
      .about-section h1 {
          float: left;
          margin: 0;
      }
      
+     /*
+    Width of 20% of about section
+    Float to the right
+    5px top and bottom margin
+    Gray 3px border
+    */
      #profile-picture {
          width: 20%;
          float: right;
@@ -338,6 +435,14 @@ White text
          border-width: 3px;
      }
      
+     /*
+    Put description on its' own line
+    Float it to the left
+    Align text to the left
+    5px of left and right padding
+    25px of top padding
+    Font size of 1.5em
+    */
      #personal-description {
          clear: left;
          float: left;
@@ -348,55 +453,97 @@ White text
          font-size: 1.5em;
      }
      
+     /*
+    30px top padding
+    */
      .skills-section {
          padding-top: 30px;
      }
      
+     /*
+    Align skills h1 to the left
+    Set it to 100% width of the section
+    */
      .skills-section h1 {
          text-align: left;
          width: 100%;
      }
      
+     /*
+    Remove flexbox from skills
+    */
      #skills {
          display: block;
      }
      
+     /*
+    Float skill boxes to the left
+    Set width to 42.5% of section
+    Remove other margins while setting the right margin to 5%
+    */
      .skill-box {
          float: left;
          width: 42.5%;
          margin: 0 0 0 5%;
      }
      
+     /*
+    Align skill box headers to the left
+    Bold text
+    5px of padding on left
+    */
      .skill-header {
          text-align: left;
          font-weight: bold;
          padding-left: 5px;
      }
      
+     /*
+    Skill width to 30% of skill box
+    Left margin of skills set to 2.5% of skill box
+    */
      .skill {
          width: 30%;
          margin-left: 2.5%;
      }
      
+     /*
+    Top padding set to 35px
+    */
      .projects-section {
          padding-top: 35px;
      }
      
+     /*
+    Left-align projects-section h1
+    */
      .projects-section h1 {
          text-align: left;
      }
      
+     /*
+    Set project container width to 42.5% of projects section
+    Margin left of 5%
+    Float to the left
+    */
      .proj-container {
          width: 42.5%;
          margin-left: 5%;
          float: left;
      }
      
+     /*
+    Font size of 1em
+    5px of padding
+    */
      .project-overlay {
          font-size: 1em;
          padding: 5px;
      }
      
+     /*
+    2.5px of left, right, and bottom padding
+    */
      .utilize-skill {
          margin: 0 2.5px 5px 2.5px;
      }
