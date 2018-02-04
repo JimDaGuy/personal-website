@@ -5,10 +5,41 @@ nav {
     text-transform: uppercase;
 }
 
+#nav-links li a, #nav-name {
+    color: #F2E3C6;
+}
+
 /*Center the links located in the nav bar*/
 #nav-links li {
     text-align: center;
     }
+    
+.navbar {
+    background: #410936;
+}
+    
+body {
+    color: #F2E3C6;
+}
+    
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #1B1521;
+    background-color: #1B1521;
+}
+    
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a {
+    background-image: -webkit-linear-gradient(top,#9A8194 0,#5B527F 100%);
+    background-image: -o-linear-gradient(top,#9A8194 0,#5B527F 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#9A8194),to(#5B527F)); 
+    background-image: linear-gradient(to bottom,##9A8194 0,#5B527F 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9A8194', endColorstr='#ff5B527F', GradientType=0);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
+    box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
+}
     
 /*
 Give the intro section a height of 25% of the screen
@@ -22,7 +53,7 @@ Set the intro section's background to white
     padding-top: 50px;
     padding-bottom: 100px;
     text-align: center;
-    background: #fff;
+    background: #2B2B2B;
 }
 
 /* 
@@ -33,7 +64,7 @@ Set background to light gray
 .about-section {
     padding-top: 25px;
     text-align: center;
-    background: #eee;
+    background: #353634;
 }
 
 /* 
@@ -70,7 +101,7 @@ Make the background dark gray
 .skills-section {
     padding: 25px 0;
     text-align: center;
-    background: #54504F;
+    background: #2B2B2B;
 }
 
 /*
@@ -91,7 +122,7 @@ Set background color to light blue
     width: 80%;
     border: 3px solid black;
     margin: 10px auto;
-    background: #BFD7D3;
+    background: #E6324B;
 }
 
 /* 
@@ -129,7 +160,7 @@ Set the background to light gray
 .projects-section {
     padding-top: 25px;
     text-align: center;
-    background: #FFFDEC;
+    background: #353634;
 }
 
 /*
@@ -235,7 +266,7 @@ Atleast 25px tall
     padding: 0 5px;
     margin: 0 5px 5px 5px;
     float: left;
-    background: #99EDFF;
+    background: #8DCCAD;
     border: 1px solid black;
     border-radius: 7.5px;
     min-height: 25px;
@@ -245,7 +276,7 @@ Atleast 25px tall
 Dark blue background
 */
 .utilize-header {
-    background: #3B54FF;
+    background: #988864;
 }
 
 /*
@@ -254,7 +285,7 @@ Set background to dark gray
 */
 .contact-section {
     text-align: center;
-    background: #D6D6C9;
+    background: #2B2B2B;
 }
 
 /*
@@ -382,7 +413,7 @@ White text
 .footer-section {
     padding-bottom: 10px;
     text-align: center;
-    background: #212020;
+    background: #1B1521;
     color: white;
 }
 
