@@ -29,25 +29,18 @@ body {
     background-color: #1B1521;
 }
     
-.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.open>a {
     background-image: -webkit-linear-gradient(top,#9A8194 0,#5B527F 100%);
     background-image: -o-linear-gradient(top,#9A8194 0,#5B527F 100%);
     background-image: -webkit-gradient(linear,left top,left bottom,from(#9A8194),to(#5B527F)); 
-    background-image: linear-gradient(to bottom,##9A8194 0,#5B527F 100%); 
+    background-image: linear-gradient(to bottom, #9A8194 0,#5B527F 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9A8194', endColorstr='#ff5B527F', GradientType=0);
     background-repeat: repeat-x;
     -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
     box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
 }
     
-/*
-Give the intro section a height of 25% of the screen
-Give it 50px of padding on the top
-100px bottom padding
-Center any text in the intro section
-Set the intro section's background to white
-*/    
 .intro-section {
     height: 25%;
     padding-top: 50px;
@@ -56,68 +49,81 @@ Set the intro section's background to white
     background: #2B2B2B;
 }
 
-/* 
-Give a top padding of 25px
-Center-align text
-Set background to light gray
-*/
 .about-section {
     padding-top: 25px;
     text-align: center;
     background: #353634;
 }
 
-/* 
-Set picture width to 80% of the screen width
-Center picture
-Give a 5px black border
-*/
 #profile-picture {
     width: 80%;
     margin: 0 auto;
     border: 5px solid black;
 }
 
-/*
-Set width to 80% of the screen
-Center description
-Font size of 1em
-Sans-serif font
-10px padding above and below the text
-*/
 #personal-description {
     width: 80%;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: sans-serif;
     padding: 10px 0;
 }
 
-/* 
-Top and bottom padding of 25px
-Center text in skills section
-Make the background dark gray
-*/
+.edex-section {
+  padding: 25px 0;
+  text-align: center;
+  background: #2B2B2B;
+}
+
+.edex-category {
+  text-align: left;
+  clear: both;
+  text-decoration: underline;
+}
+
+.edex-subcategory {
+  text-align: left;
+  padding-left: 15px;
+  clear: both;
+}
+
+.edex-subtitle {
+  text-align: left;
+  padding-left: 15px;
+  clear: both;
+}
+
+.edex-desc {
+  text-align: left;
+  padding-left: 30px;
+  clear: both;
+}
+
+.edex-ul {
+  text-align: left;
+}
+
+#edex-skills {
+  margin-bottom: 5px !important;
+}
+
 .skills-section {
     padding: 25px 0;
     text-align: center;
-    background: #2B2B2B;
+    background: #353634;
 }
 
-/*
-Add flex display for skill boxes within the #skills container
-Use flex column for skill boxes
-*/
+.skills-category {
+  text-align: left;
+  clear: both;
+  text-decoration: underline;
+}
+
 #skills2 {
     display: flex;
     flex-direction: column
 }
-/*
-Set width of skill boxes to 80% of screen size
-3px border around skill boxes
-Margin of 10px above and below each box and centers them
-Set background color to light blue
-*/
+
 .skill-box {
     width: 80%;
     border: 3px solid black;
@@ -125,12 +131,6 @@ Set background color to light blue
     background: #E6324B;
 }
 
-/* 
-Set width of header to 100% of the skills box container
-Center header
-Font-size of 1.5em
-Sans-serif font
-*/
 .skill-header {
     width: 100%;
     text-align: center;
@@ -138,12 +138,6 @@ Sans-serif font
     font-family: sans-serif;
 }
 
-/* 
-Set width of each language to 35% of the skill box
-10px margin above and below each language
-Set left margin to 10% of skill box
-Float skills to the left
-*/
 .skill {
     width: 35%;
     margin-top: 10px;
@@ -152,32 +146,17 @@ Float skills to the left
     float: left;
 }
 
-/* 
-Add 25px of padding to the top of the projects section
-Center all text
-Set the background to light gray
-*/
 .projects-section {
     padding-top: 25px;
     text-align: center;
-    background: #353634;
+    background:#2B2B2B;
 }
 
-/*
-Align text to left
-Set margin to 5% of project container for each project header
-*/
 .proj-header {
     text-align: left;
     margin-left: 5%;
 }
 
-/*
-Set project img-desc box to 90% width
-Center the img-desc box and add 10px margins above and below
-Position relative
-Put the img-desc box on its' own line
-*/
 .proj-img-desc {
     width: 90%;
     margin: 10px auto;
@@ -191,6 +170,7 @@ Block display for project image
 */
 .proj-img {
     width: 100%;
+    height: 200px;
     display: block;
 }
 
@@ -285,7 +265,7 @@ Set background to dark gray
 */
 .contact-section {
     text-align: center;
-    background: #2B2B2B;
+    background: #353634;
 }
 
 /*
@@ -348,60 +328,21 @@ White text
     color: white;
 }
 
-
-/* Social Media Slider using Slick Library */
-
 /*
 Gray icons
-Width to 60% of screen
 20px top/bottom margin, centered
 Center icons
 Height of 10px
 High z-index to send it in front of all elements
 */
-.socialMedia {
-  color: gray;
-  width:  60%;
-  margin: 20px auto;
+i {
+  margin: 10px;
   text-align: center;
-  height: 10px;
-  z-index: 999999;
-}
-
-/*
-Set font size of icons to 1.5em
-Block display
-Icons centered
-Width of icons to 40% of their blocks
-Gray icons
-*/
-.socialMedia i {
   font-size: 1.5em;
-  display: block;
-  margin: auto;
-  width: 40%;
-  color: gray;
 }
 
-/*
-Icons white when hovered
-*/
-.socialMedia i:hover {
+i:hover {
     color: white;
-}
-
-/*Position left arrow outside of slider and in front of most elements*/
-.slick-prev {
-  padding-top: 5px;
-  left: -25px;
-  z-index: 99;
-}
-
-/*Position right arrow outside of slider and in front of most elements*/
-.slick-next {
-  padding-top: 5px;
-  right: -25px;
-  z-index: 99;
 }
 
 /* 

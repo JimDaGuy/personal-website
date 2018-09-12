@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <!--Favicon-->
-        <link rel="icon" href="weblogo.png">
+        <link rel="icon" href="assets/weblogo.png">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +16,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <!--ScrollingNav-->
         <link rel="stylesheet" type="text/css" href="ScrollingNav/scrolling-nav.css">
-        <!--Slick-->
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <!--Font Awesome for Logos and Icons-->
         <script src="https://use.fontawesome.com/85f6cd6809.js"></script>
         <!-- Fonts -->
@@ -62,6 +59,9 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#edex">Education/Experience</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
@@ -95,14 +95,50 @@
                     <h1>About Me</h1>
                 </div>
                 <div class="col-lg-12">
-                    <img src="profilepicture.jpg" alt="James DiGrazia's Profile Picture" id="profile-picture"/>
+                    <img src="assets/profilepicture.jpg" alt="James DiGrazia's Profile Picture" id="profile-picture"/>
                     <div id="personal-description">
-                        I'm a third-year Game Design and Development major
-                        at Rochester Institute of Technology. I've recently found an interest
-                        in web development and have taught myself outside of
-                        the classroom with personal projects. I'm currently seeking a Software
-                        Engineering co-op with a preference for front-end development. 
+                        I'm a third year Game Design and Development student at RIT.
+                        I love software development and always find myself trying to learn
+                        new things. I'm currently seeking a Full-Stack Software Engineering
+                        Co op for the Summer/Fall of 2019. Feel free to contact me!
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="edex" class="edex-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Education | Experience</h1>
+                </div>
+                <div class="col-lg-12">
+                    <h2 class="edex-category">Education:</h2>
+                    <h3 class="edex-subcategory">Rochester Institute of Technology - Rochester NY</h3>
+                    <h4 class="edex-subtitle">BS - Game Design and Development - GPA - 3.76</h4>
+                    <p class="edex-desc">Expected Graduation: May 2020</p>
+                    <p class="edex-desc">Activites: Computer Science House - Social Director('17-'18)</p>
+                    
+                    <h2 class="edex-category">Experience:</h2>
+                    <h3 class="edex-subcategory">Liberty Mutual Insurance - Dover NH</h3>
+                    <h4 class="edex-subtitle">Software Engineering Intern: May 2018 - August 2018</h4>
+                    <div class="skills-used" id="edex-skills">
+                        <div class="utilize-skill">C#</div>
+                        <div class="utilize-skill">MySQL</div>
+                        <div class="utilize-skill">Node</div>
+                        <div class="utilize-skill">Express</div>
+                    </div>
+                    <ul class="edex-ul">
+                      <li>Developed an application for the IT Helpdesk to expedite workflow 
+                        while troubleshooting issues for remote computers.</li>
+                      <li>Interviewed multiple Helpdesk agents and follow continuous improvement
+                        practices by releasing WIP versions to a pilot group.
+                      </li>
+                      <li>Worked on a usage statistics API for the application to be later implemented
+                        into a developer dashboard.
+                      </li>
+                      </ul>
                 </div>
             </div>
         </div>
@@ -116,25 +152,22 @@
                     <h1>Skills</h1>
                 </div>
                 <div class="col-lg-12">
-                    <div id="skills2">
-                        <div id="languages" class="skill-box">
-                            <div class="skill-header">Languages/Frameworks</div>
-                            <img src="html.png" alt="HTML" class="language skill"/>
-                            <img src="css.png" alt="CSS" class="language skill"/>
-                            <img src="javascript.png" alt="Javascript" class="language skill"/>
-                            <img src="bootstrap.png" alt="Bootstrap" class="language skill"/>
-                            <img src="csharp.png" alt="C-Sharp" class="language skill"/>
-                            <img src="python.png" alt="Python" class="language skill"/>
-                        </div>
-                        <div id="tools" class="skill-box">
-                            <div class="skill-header">Tools</div>
-                            <img src="github.png" alt="GitHub" class="tool skill"/>
-                            <img src="visualstudio.png" alt="Visual Studio" class="tool skill"/>
-                            <img src="photoshop.png" alt="Photoshop" class="tool skill"/>
-                            <img src="illustrator.png" alt="Illustrator" class="tool skill"/>
-                            <img src="unity.png" alt="Unity" class="tool skill"/>
-                            <img src="maya.png" alt="Maya" class="tool skill"/>
-                        </div>
+                    <h2 class="skills-category">Languages:</h2>
+                    <div class="skills-used">
+                        <div class="utilize-skill">HTML/CSS</div>
+                        <div class="utilize-skill">HTML Canvas</div>
+                        <div class="utilize-skill">C#</div>
+                        <div class="utilize-skill">JS</div>
+                        <div class="utilize-skill">Node</div>
+                        <div class="utilize-skill">Express</div>
+                        <div class="utilize-skill">MySQL</div>
+                        <div class="utilize-skill">React</div>
+                    </div>
+                    <h2 class="skills-category">Other Tools:</h2>
+                    <div class="skills-used">
+                        <div class="utilize-skill">Git</div>
+                        <div class="utilize-skill">Visual Studio</div>
+                        <div class="utilize-skill">Unity</div>
                     </div>
                 </div>
             </div>
@@ -150,67 +183,82 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="proj-container">
-                        <h2 class="proj-header">Tie or Dye</h2>
-                        <div class="proj-img-desc">
-                            <img src="startscreen.png" alt="Tie or Dye Start Screen" class="proj-img">
+                        <h2 class="proj-header">Paint Gauge</h2>
+                        <div class="proj-img-desc" onclick="window.location.href='https://github.com/JimDaGuy/paint-gauge'">
+                            <img src="assets/paintgauge.png" alt="Paint Gauge Project Image" class="proj-img">
                             <div class="project-overlay">
-                                Tie or Dye was a semester-long group project to create a game in 
-                                Monogame. As Game Architect, my duties included planning class hierarchy,
-                                finite state machines, and project structure. This gave me a better 
-                                understanding of important data structures and algorithms.
+                                Paint Gauge is a WIP web application that allows
+                                users to rate paintings from the Harvard Art Museum.
+                                Click on the image to check out the repository on Github! 
                             </div>
                         </div>
                         <div class="skills-used">
                             <div class="utilize-header utilize-skill">Utilizes: </div>
-                            <div class="utilize-skill">Visual Studio</div>
-                            <div class="utilize-skill">Monogame</div>
-                            <div class="utilize-skill">C#</div>
+                            <div class="utilize-skill">JS</div>
+                            <div class="utilize-skill">React</div>
+                            <div class="utilize-skill">Node</div>
+                            <div class="utilize-skill">Express</div>
+                            <div class="utilize-skill">MySQL</div>
+                            <div class="utilize-skill">Harvard Art Museum API</div>
                         </div>
                     </div>
                     
                     <div class="proj-container">
-                        <h2 class="proj-header">First Website</h2>
-                        <div class="proj-img-desc">
-                            <img src="firstwebsite.png" alt="First Website Snapshot" class="proj-img">
+                        <h2 class="proj-header">Audio Vis</h2>
+                        <div class="proj-img-desc" onclick="window.location.href='https://github.com/JimDaGuy/audio-vis'">
+                            <img src="assets/audiovis.png" alt="Audio Vis Project Image" class="proj-img">
                             <div class="project-overlay">
-                                I used this project to begin teaching myself web development.
-                                It includes several links to different minor projects that I
-                                used to learn about things like CSS Animations and Javascript
-                                Libraries.
+                                Audio Vis is an Audio Visualizer that allows users to sign 
+                                in with their Spotify account and visualize song previews
+                                from Spotify.
+                                Click on the image to check out the repository on Github!
                             </div>
                         </div>
                         <div class="skills-used">
                             <div class="utilize-header utilize-skill">Utilizes: </div>
-                            <div class="utilize-skill">HTML</div>
-                            <div class="utilize-skill">CSS</div>
-                            <div class="utilize-skill">Javascript</div>
-                            <div class="utilize-skill">Slick library</div>
+                            <div class="utilize-skill">HTML Canvas</div>
+                            <div class="utilize-skill">JS</div>
+                            <div class="utilize-skill">Node</div>
+                            <div class="utilize-skill">Spotify Web API</div>
                         </div>
                     </div>
                     
                     <div class="proj-container">
-                        <h2 class="proj-header">SHADE</h2>
-                        <div class="proj-img-desc">
-                            <img src="shade.png" alt="SHADE Mockup" class="proj-img">
+                        <h2 class="proj-header">Bubble Phoenix</h2>
+                        <div class="proj-img-desc" onclick="window.location.href='https://github.com/JimDaGuy/bubblephoenix'">
+                            <img src="assets/bubblephoenix.PNG" alt="Bubble Phoenix Project Image" class="proj-img">
                             <div class="project-overlay">
-                                This is a current project I've picked up to teach myself
-                                ReactJS. SHADE, or Social Helper Assistant DEvice will
-                                be a one page application to help me with my duties as
-                                the Social Director of Computer Science House.
+                                Bubble Phoenix is a rich web application that allows
+                                users to search a location for charities in their area.
+                                It also includes a 'Search Nearby' feature utilizing geolocation.
+                                Click on the image to check out the repository on Github!
+                              </div>
+                        </div>
+                        <div class="skills-used">
+                            <div class="utilize-header utilize-skill">Utilizes: </div>
+                            <div class="utilize-skill">HTML Canvas</div>
+                            <div class="utilize-skill">JS</div>
+                            <div class="utilize-skill">Node</div>
+                            <div class="utilize-skill">OrgHunter's Charity Search API</div>
+                            <div class="utilize-skill">Sunrise-Sunset API</div>
+                        </div>
+                    </div>
+                    
+                    <div class="proj-container">
+                        <h2 class="proj-header">Yak Runner</h2>
+                        <div class="proj-img-desc" onclick="window.location.href='https://github.com/JimDaGuy/yak-runner'">
+                            <img src="assets/yakrunner.PNG" alt="Yak Runner Project Image" class="proj-img">
+                            <div class="project-overlay">
+                              Yak Runner is an endless runner game that was made using
+                              HTML Canvas.
+                              Click on the image to check out the repository on Github! 
                             </div>
                         </div>
                         <div class="skills-used">
-                        </div>
-                    </div>
-                    
-                    <div class="proj-container">
-                        <h2 class="proj-header">Notes</h2>
-                        <div class="proj-img-desc">
-                            <img src="https://placehold.it/350x150/E8D8D1?text=Check+back+soon!" alt="Project 1 Image Alternative" class="proj-img">
-                            <div class="project-overlay">
-                                Eventually more projects will go here, but for now I will link my notes <a href="notes.html">right here.</a>
-                            </div>
-                        </div>
+                            <div class="utilize-header utilize-skill">Utilizes: </div>
+                            <div class="utilize-skill">HTML Canvas</div>
+                            <div class="utilize-skill">JS</div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -228,16 +276,11 @@
                     
                     <h3 id="contact-blurb">Want to talk to me about my work? 
                     Feel free to send me an email. You can also check out my resume!</h3>
-                    <button type="button" id="emailButton" class="btn btn-link btn-lg" onclick="window.location.href='mailto:jtd2401@rit.edu'">Email Me</button>
-                    <button type="button" id="resumeButton" class="btn btn-link btn-lg" onclick="window.location.href='resume.html'">Resume</button>
-                    <h3>More about me:</h3>
-                    <!-- Social Media SLider -->
-                    <div class="socialMedia">
-                        <!--Slider Elements-->
-                        <div><i class="fa fa-github" aria-hidden="true" onclick="window.location.href='https://github.com/JimDaGuy'"></i></div>
-                        <div><i class="fa fa-codepen" aria-hidden="true" onclick="window.location.href='http://codepen.io/jtd2401/'"></i></div>
-                        <div><i class="fa fa-linkedin" aria-hidden="true" onclick="window.location.href='https://www.linkedin.com/in/james-digrazia-b03607129'"></i></div>
-                        <div><i class="fa fa-bitbucket" aria-hidden="true" onclick="window.location.href='https://bitbucket.org/JimDaGuy/'"></i></div>
+                    <div>
+                      <i class="fa fa-3x fa-github bottom-icon" aria-hidden="true" onclick="window.location.href='https://github.com/JimDaGuy'"></i>
+                      <i class="fa fa-3x fa-linkedin bottom-icon" aria-hidden="true" onclick="window.location.href='https://www.linkedin.com/in/jimdaguy'"></i>
+                      <i class="fa fa-3x fa-file bottom-icon" aria-hidden="true" onclick="window.location.href='assets/resume.pdf'"></i>
+                      <i class="fa fa-3x fa-envelope bottom-icon" aria-hidden="true" onclick="window.location.href='mailto:james@jimdaguy.com'"></i>
                     </div>
                 </div>
             </div>
@@ -249,17 +292,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4>Thanks for stopping by. Come again!</h4>
-                    <span>Copyright © 2018 James DiGrazia, All Rights Reserved</span>
+                    <h4>Thanks for stopping by! Come again soon.</h4>
                 </div>
             </div>
         </div>
     </section>
         <!-- Import JQuery -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <!--Slick-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
         <!--Bootstrap-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
          <!--ScrollingNav-->
